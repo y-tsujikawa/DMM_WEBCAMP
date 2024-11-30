@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.list {
+  margin-bottom: 50px;
+}
+
+.list-item {
+  padding: 20px;
+  list-style: none;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-item {
+  width: 30%;
+  height: 200px;
+  background-color: #ffd700;
+  margin: 0 5% 40px 0;
+}
+
+.box-item:nth-child(1),
+.box-item:nth-child(5),
+.box-item:nth-child(9) {
+  background-color: #ff8c00;
+}
+
+.box-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.box-item:nth-last-child(-n + 3) { /*nth-last-childは最後からのnth-child*/
+  margin-bottom: 0;
+}
